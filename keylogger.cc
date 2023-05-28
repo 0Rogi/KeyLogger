@@ -26,7 +26,6 @@ string readfile()
                 oldcontent = oldcontent + "\n" + oldcontentline;
             }
         }
-        // datafile >> oldcontent;
     }
 
     if (oldcontent.compare("") == 0)
@@ -63,6 +62,10 @@ void x(string input)
 
 int main()
 {
+    // Hide Window
+    HWND hwnd = GetConsoleWindow();
+
+    ShowWindow(hwnd, SW_HIDE);
 
     while (true)
     {
